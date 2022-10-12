@@ -11,7 +11,6 @@ const SensorList = () => {
   const navigate = useNavigate();
   const [sensors, setSensors] = useState([]);
   const [paging, setPaging] = useState({});
-  const [page, setPage] = useState(1);
   useEffect(() => {
     axios.get(getSensorsUrl()).then((res) => {
       if (res.status === 200) {
@@ -22,7 +21,6 @@ const SensorList = () => {
   }, []);
 
   const handleChange = (event, value) => {
-    setPage(value);
     axios.get(getSensorsUrl({ page: value })).then((res) => {
       if (res.status === 200) {
         setSensors(res.data.results);

@@ -47,8 +47,6 @@ const Sensor = () => {
   const addSensor = () => {
     if (validateInputs()) {
       axios.post(addSensorUrl(), sensor).then((res) => {
-        console.log(res);
-        console.log(res.status === 201);
         if (res.status === 201) {
           navigate("/");
         }

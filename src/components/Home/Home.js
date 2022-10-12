@@ -73,10 +73,6 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <div>
-        <h1>SENSOR TEMPERATURES</h1>
-        {temps.length && <Line options={options} data={chartOptions.data} />}
-      </div>
       <div className="stats-cards">
         {statsItems.map((stats) => (
           <StatusCard
@@ -87,7 +83,10 @@ const Home = () => {
           />
         ))}
       </div>
-      <div></div>
+      <div>
+        <h3>SENSOR TEMPERATURES</h3>
+        <Line options={options} data={chartOptions.data} />
+      </div>
       <SensorList />
     </div>
   );
