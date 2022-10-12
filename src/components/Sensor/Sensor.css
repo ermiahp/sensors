@@ -1,0 +1,96 @@
+h2 {
+    font-weight: 400;
+}
+
+.add-sensor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.add-sensor__details {
+    width: 60%;
+}
+
+.add-sensor__details h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.add-sensor__details hr {
+    margin-bottom: 30px;
+}
+
+.add-sensor__details input {
+    height: 35px;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.add-sensor__details select {
+    height: 40px;
+    width: 52%;
+}
+
+.add-sensor__alerts {
+    width: 30%;
+}
+
+.add-sensor__alerts hr {
+    margin-bottom: 30px;
+}
+
+.add-sensor__alerts input {
+    height: 35px;
+    width: 90%;
+}
+
+.add-sensor__alerts label {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.add-sensor__alerts span {
+    font-size: 15px;
+}
+
+.add-sensor-actions {
+    border-top: 1px solid var(--light-color);
+    width: 100%;
+    padding-top: 25px;
+    margin-top: 150px;
+}
+
+.add-sensor-actions button {
+    height: 35px;
+    width: 150px;
+    margin-right: 15px;
+    border: none;
+}
+
+.add-sensor-actions button:first-child {
+    background-color: var(--dark-color);
+    color: white;
+    cursor: pointer;
+}
+
+.add-sensor-actions button:nth-child(2) {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .add-sensor__details {
+        width: 100%;
+    }
+
+    .add-sensor__details input {
+        width: 100%;
+    }
+
+    .add-sensor__alerts {
+        width: 100%;
+    }
+}

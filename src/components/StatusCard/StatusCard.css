@@ -1,0 +1,20 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--dark-color);
+    width: 28%;
+    min-height: 65px;
+    padding: 10px;
+}
+
+.card__data h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card__data p {
+    margin: 0;
+}

@@ -1,0 +1,12 @@
+.App {
+  min-height: 100vh;
+  color: #606060;
+  position: relative;
+  padding-left: 60px;
+  background-color: white;
+}
+
+.frame {
+  padding: 50px;
+  min-height: calc(100vh - 125px);
+}
